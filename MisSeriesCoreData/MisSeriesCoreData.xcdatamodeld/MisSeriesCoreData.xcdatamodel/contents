@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="16A323" minimumToolsVersion="Automatic">
+    <entity name="Capitulo" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nota" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="serie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Serie" inverseName="capitulo" inverseEntity="Serie" syncable="YES"/>
+    </entity>
+    <entity name="Serie" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroCapitulos" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="capitulo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Capitulo" inverseName="serie" inverseEntity="Capitulo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Capitulo" positionX="-360" positionY="-18" width="128" height="90"/>
+        <element name="Serie" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>
